@@ -1,0 +1,37 @@
+# Node.js
+node_modules/
+jspm_packages/
+package-lock.json
+yarn.lock
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Build & temporary files
+dist/
+build/
+coverage/
+tmp/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Optional: Caches
+.npm/
+.eslintcache
+.stylelintcache
+
+# Optional: Testing tools
+jest/
+
+# Ignore linters specific files
+lint-staged.config.js
+prettier.config.js
+
+# Ignore test coverage reports
+*.nyc_output
