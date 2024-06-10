@@ -14,15 +14,16 @@ model Poll {
   updatedAt DateTime @default(now())
 
   options PollOption[]
-  votes    Vote[]
+  votes   Vote[]
 }
 
 model PollOption {
-  id     String @id @default(uuid())
-  title  String
-  pollId String
+  id           String @id @default(uuid())
+  title        String
+  pollId       String
+  votesAmmount Int
 
-  poll Poll   @relation(fields: [pollId], references: [id])
+  poll  Poll   @relation(fields: [pollId], references: [id])
   votes Vote[]
 }
 
